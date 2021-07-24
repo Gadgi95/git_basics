@@ -48,6 +48,29 @@ public class Battery {
   }
 
   public void printInfoBattery() {
-    //System.out.println("Battery level: "  + getBatteryLevel + "%");
+    System.out.println("Battery level: "  + getBatteryLevel() + "%");
+  }
+
+  public int chargingBattery(int getBatteryLevel) {
+    while (getBatteryLevel < getMaxBatteryLevel()) {
+      System.out.println("Уровень заряда батареи " + getBatteryLevel + "%");
+      System.out.println("Время заряда батареи до 100% " + (100 - getBatteryLevel));
+      getBatteryLevel++;
+    }
+    return getBatteryLevel;
+  }
+  //При включении наушников должен срабатывать метод разрядки аккума
+  public void discharge(int getBatteryLevel, int getMinBatteryLevel) {
+    if (getBatteryLevel == getMinBatteryLevel) {
+      System.out.println("Battery level low");
+
+    }
+    //while (getBatteryLevel > getMinBatteryLevel ) {
+      //getBatteryLevel--;
+      //Сделать разрядку аккума на 7% каждый час
+      //Если включено шумоподавление +2%
+      //Каждая голосовая комманда ассистенту +0,2%
+      //Громкость при 50% формула не меняется(ниже громкость ниже расход и наоборот)
+    //}
   }
 }

@@ -7,6 +7,7 @@ public class Headphones {
   private boolean microphone;
   private VoiceAssistance voiceAssistance;
 
+
   public Headphones(String nameTM, String model, Battery battery, Case cases,
       TryWireless tryWireless,
       boolean microphone, VoiceAssistance voiceAssistance) {
@@ -73,5 +74,13 @@ public class Headphones {
 
   public void setVoiceAssistance(VoiceAssistance voiceAssistance) {
     this.voiceAssistance = voiceAssistance;
+  }
+  public void powerOn() {
+    System.out.println("Power on");
+    System.out.println(getBattery().getBatteryLevel());
+    getBattery().discharge(getBattery().getBatteryLevel(), getBattery().getMinBatteryLevel());
+  }
+  public void powerOff() {
+    System.out.println("Power off");
   }
 }

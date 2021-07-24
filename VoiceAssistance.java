@@ -1,6 +1,7 @@
 public class VoiceAssistance {
   private boolean voiceAssistance;
   private String assistanceName;
+  private String command;
 
   public VoiceAssistance(boolean voiceAssistance) {
     this.voiceAssistance = voiceAssistance;

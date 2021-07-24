@@ -42,6 +42,13 @@ public class Case {
     this.charging = charging;
   }
 
+  public void chargingHeadphones() {
+  //Кейс заряжает наушники и в то же время разряжается
+  }
+  public void chargingIndicator() {
+    //Если наушники заряжаются индикатор горит крассным (до 45%), желтым (от 46 до 75%) или зеленым (от 76%)
+  }
+
   //if(charging = true) {
     //getBattaryLevel -= Headphones.getBattaryLevel;
     //Расчитать объем зарядки кейса - заряд потраченный на наушники, вывести
