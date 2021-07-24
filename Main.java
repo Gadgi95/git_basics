@@ -11,7 +11,7 @@ public class Main {
         false,
         new VoiceAssistance(true, "Alisa"));
 
-
+    Headphones headphones1 = new Headphones();
 
   }
 
