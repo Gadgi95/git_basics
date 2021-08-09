@@ -12,8 +12,6 @@ public class Main {
         new VoiceAssistance(true, "Alisa"));
 
 
-    Headphones headphones1 = new Headphones();
-
   }
 
 }
