@@ -2,6 +2,9 @@ public class Battery {
   private boolean battery;
   private int batteryVolume;
   private int batteryLevel;
+  private int maxBatteryLevel = 100;
+  private int minBatteryLevel = 0;
+
 
   public Battery(boolean battary) {
     this.battery = battary;
@@ -38,12 +41,10 @@ public class Battery {
   }
 
   public int getMinBatteryLevel() {
-    int minBatteryLevel = 0;
     return minBatteryLevel;
   }
 
   public int getMaxBatteryLevel() {
-    int maxBatteryLevel = 100;
     return maxBatteryLevel;
   }
 
@@ -65,6 +66,17 @@ public class Battery {
       System.out.println("Battery level low");
 
     }
+
+//    public void print() {
+//      System.out.println(this);
+//    }
+//    public String toString() {
+//      return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+//              + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
+//          getTryWireless(), isMicrophone(), getVoiceAssistance());
+//    }
+
+
     //while (getBatteryLevel > getMinBatteryLevel ) {
       //getBatteryLevel--;
       //Сделать разрядку аккума на 7% каждый час

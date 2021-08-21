@@ -43,3 +43,13 @@ public class TryWireless {
     this.wifi = wifi;
   }
 }
+
+//  public void print() {
+//    System.out.println(this);
+//  }
+//  public String toString() {
+//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
+//        getTryWireless(), isMicrophone(), getVoiceAssistance());
+//  }
+

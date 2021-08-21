@@ -6,6 +6,7 @@ public class Headphones {
   private TryWireless tryWireless;
   private boolean microphone;
   private VoiceAssistance voiceAssistance;
+  private String text;
 
 
   public Headphones(String nameTM, String model, Battery battery, Case cases,
@@ -18,6 +19,7 @@ public class Headphones {
     this.tryWireless = tryWireless;
     this.microphone = microphone;
     this.voiceAssistance = voiceAssistance;
+
   }
 
   public String getNameTM() {
@@ -83,4 +85,14 @@ public class Headphones {
   public void powerOff() {
     System.out.println("Power off");
   }
+
+  public void print() {
+    System.out.println(this);
+  }
+  public String toString() {
+    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+        + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
+        getTryWireless(), isMicrophone(), getVoiceAssistance());
+  }
+
 }

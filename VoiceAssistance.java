@@ -27,4 +27,14 @@ public class VoiceAssistance {
   public void setAssistanceName(String assistanceName) {
     this.assistanceName = assistanceName;
   }
+
+//  public void print() {
+//    System.out.println(this);
+//  }
+//  public String toString() {
+//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
+//        getTryWireless(), isMicrophone(), getVoiceAssistance());
+//  }
+
 }

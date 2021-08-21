@@ -49,6 +49,16 @@ public class Case {
     //Если наушники заряжаются индикатор горит крассным (до 45%), желтым (от 46 до 75%) или зеленым (от 76%)
   }
 
+//  public void print() {
+//    System.out.println(this);
+//  }
+//  public String toString() {
+//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
+//        getTryWireless(), isMicrophone(), getVoiceAssistance());
+//  }
+
+
   //if(charging = true) {
     //getBattaryLevel -= Headphones.getBattaryLevel;
     //Расчитать объем зарядки кейса - заряд потраченный на наушники, вывести

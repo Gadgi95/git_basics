@@ -11,6 +11,8 @@ public class Main {
         false,
         new VoiceAssistance(true, "Alisa"));
 
+    headphones.print();
+
 
   }
 
