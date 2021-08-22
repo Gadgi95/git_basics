@@ -45,4 +45,6 @@ public class VoiceAssistance {
         isVoiceAssistance(), getAssistanceName(), getCommand());
   }
 
+  //Добавить список комманд, которые можно вводить.
+
 }
