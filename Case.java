@@ -2,6 +2,7 @@ public class Case {
   private boolean cases;
   private Battery battery; //Добавляем всю информация про аккум, уровень заряда батареи и т.д.
   private boolean charging;
+  private String text;
 
   public Case(boolean cases) {
     this.cases = cases;
@@ -49,14 +50,13 @@ public class Case {
     //Если наушники заряжаются индикатор горит крассным (до 45%), желтым (от 46 до 75%) или зеленым (от 76%)
   }
 
-//  public void print() {
-//    System.out.println(this);
-//  }
-//  public String toString() {
-//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
-//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
-//        getTryWireless(), isMicrophone(), getVoiceAssistance());
-//  }
+  public void print() {
+    System.out.println(this);
+  }
+  public String toString() {
+    return text = String.format( "%s\nАккум кейса: %s\nЗаряжает наушники: %s",
+        isCases(), getBattery(), isCharging());
+  }
 
 
   //if(charging = true) {

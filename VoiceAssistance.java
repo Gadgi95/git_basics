@@ -2,6 +2,7 @@ public class VoiceAssistance {
   private boolean voiceAssistance;
   private String assistanceName;
   private String command;
+  private String text;
 
   public VoiceAssistance(boolean voiceAssistance) {
     this.voiceAssistance = voiceAssistance;
@@ -28,13 +29,20 @@ public class VoiceAssistance {
     this.assistanceName = assistanceName;
   }
 
-//  public void print() {
-//    System.out.println(this);
-//  }
-//  public String toString() {
-//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
-//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
-//        getTryWireless(), isMicrophone(), getVoiceAssistance());
-//  }
+  public String getCommand() {
+    return command;
+  }
+
+  public void setCommand(String command) {
+    this.command = command;
+  }
+
+  public void print() {
+    System.out.println(this);
+  }
+  public String toString() {
+    return text = String.format( "%s\nИмя голосового помощника: %s\nСписок комманд: %s",
+        isVoiceAssistance(), getAssistanceName(), getCommand());
+  }
 
 }

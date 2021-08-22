@@ -80,7 +80,7 @@ public class Headphones {
   public void powerOn() {
     System.out.println("Power on");
     System.out.println(getBattery().getBatteryLevel());
-    getBattery().discharge(getBattery().getBatteryLevel(), getBattery().getMinBatteryLevel());
+    getBattery().dischargeBattery(getBattery().getBatteryLevel(), getBattery().getMinBatteryLevel());
   }
   public void powerOff() {
     System.out.println("Power off");
@@ -90,7 +90,7 @@ public class Headphones {
     System.out.println(this);
   }
   public String toString() {
-    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
+    return text = String.format( "Бренд: %s, Модель: %s\nАккум наушников: %s\nКейс: %s\nTryWireless: %s\n"
         + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
         getTryWireless(), isMicrophone(), getVoiceAssistance());
   }

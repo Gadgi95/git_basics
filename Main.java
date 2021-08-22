@@ -6,7 +6,7 @@ public class Main {
         "Sony",
         "wf-1000x",
         new Battery(true, 460, 100),
-        new Case(true, new Battery(true, 1250, 95)),
+        new Case(true, new Battery(true, 1250, 95),true),
         new TryWireless(true, true),
         false,
         new VoiceAssistance(true, "Alisa"));

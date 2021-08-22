@@ -4,6 +4,7 @@ public class Battery {
   private int batteryLevel;
   private int maxBatteryLevel = 100;
   private int minBatteryLevel = 0;
+  private String text;
 
 
   public Battery(boolean battary) {
@@ -61,20 +62,20 @@ public class Battery {
     return getBatteryLevel;
   }
   //При включении наушников должен срабатывать метод разрядки аккума
-  public void discharge(int getBatteryLevel, int getMinBatteryLevel) {
+  public void dischargeBattery(int getBatteryLevel, int getMinBatteryLevel) {
+
     if (getBatteryLevel == getMinBatteryLevel) {
       System.out.println("Battery level low");
-
     }
+  }
 
-//    public void print() {
-//      System.out.println(this);
-//    }
-//    public String toString() {
-//      return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
-//              + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
-//          getTryWireless(), isMicrophone(), getVoiceAssistance());
-//    }
+  public void print() {
+    System.out.println(this);
+  }
+  public String toString() {
+    return text = String.format( "%s\nОбъем батареи: %s\nУровень заряда батареи: %s",
+      isBattery(), getBatteryVolume(), getBatteryLevel());
+  }
 
 
     //while (getBatteryLevel > getMinBatteryLevel ) {
@@ -84,5 +85,5 @@ public class Battery {
       //Каждая голосовая комманда ассистенту +0,2%
       //Громкость при 50% формула не меняется(ниже громкость ниже расход и наоборот)
     //}
-  }
+
 }

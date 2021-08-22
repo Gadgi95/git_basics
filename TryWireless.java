@@ -3,6 +3,7 @@ public class TryWireless {
   private boolean tryWireless;
   private boolean bluetooth; //Возможно потребуется создать enum с перечислением bluetooth 3, 4, 5
   private boolean wifi;
+  private String text;
 
   public TryWireless(boolean tryWireless) {
     this.tryWireless = tryWireless;
@@ -42,14 +43,14 @@ public class TryWireless {
   public void setWifi(boolean wifi) {
     this.wifi = wifi;
   }
-}
 
-//  public void print() {
-//    System.out.println(this);
-//  }
-//  public String toString() {
-//    return text = String.format( "Бренд: %s, Модель: %s\nАккум: %s\nКейс: %s\nTryWireless: %s\n"
-//            + "Микрофон: %s\nГолосовой помощник: %s", getNameTM(), getModel(), getBattery(), getCases(),
-//        getTryWireless(), isMicrophone(), getVoiceAssistance());
-//  }
+  public void print() {
+    System.out.println(this);
+  }
+
+  public String toString() {
+    return text = String.format("%s\nBLUETOOTH: %s\nWIFI: %s",
+        isTryWireless(), isBluetooth(), isWifi());
+  }
+}
 
