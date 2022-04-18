@@ -6,36 +6,35 @@ import java.util.Comparator;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Company{
+@Getter @Setter
+public class Company extends KPI{
 
-    @Getter @Setter
     private int income = 0;
-
-    @Getter @Setter
     private int countEmployees = 0;
-
-    @Getter @Setter
     private String nameCompany;
 
-    @Getter @Setter
     ArrayList<Staff> employeesList = new ArrayList<>();
 
-    public Company(String nameCompany) {
+    public Company(String nameCompany)
+    {
         this.nameCompany = nameCompany;
     }
 
-    public void hire(Staff staff) {
+    public void hire(Staff staff)
+    {
         employeesList.add(staff);
         setCountEmployees(employeesList.size());
     }
 
-    public ArrayList<Staff> hireAll(ArrayList<Staff> candidates) {
+    public ArrayList<Staff> hireAll(ArrayList<Staff> candidates)
+    {
         employeesList.addAll(candidates);
         setCountEmployees(employeesList.size());
         return employeesList;
     }
 
-    public ArrayList<Staff> fire(int id) {
+    public ArrayList<Staff> fire(int id)
+    {
         Comparator<Staff> comparator = Comparator.comparing(Staff::getStaffId);
         employeesList.sort(comparator);
         employeesList.remove(id);
@@ -43,7 +42,8 @@ public class Company{
         return employeesList;
     }
 
-    public ArrayList<Staff> getTopSalaryStaff(int count) {
+    public ArrayList<Staff> getTopSalaryStaff(int count)
+    {
         if(count < employeesList.size() && count > 0) {
             Comparator<Staff> comparator = Comparator.comparing(Staff::getMonthSalary);
             employeesList.sort(comparator);
@@ -58,7 +58,8 @@ public class Company{
         }
     }
 
-    public ArrayList<Staff> getLowestSalaryStaff(int count) {
+    public ArrayList<Staff> getLowestSalaryStaff(int count)
+    {
         if (count < employeesList.size() && count > 0) {
             Comparator<Staff> comparator = Comparator.comparing(Staff::getMonthSalary);
             employeesList.sort(comparator);
@@ -73,7 +74,8 @@ public class Company{
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return nameCompany +
                 "\nincome = " + income +
                 "\ncountEmployees = " + countEmployees;

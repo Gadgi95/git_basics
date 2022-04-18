@@ -17,7 +17,8 @@ public class ShopAssistant extends Staff{
 
 
   @Override
-  public double getMonthSalary() {
+  public double getMonthSalary()
+  {
     return getTradeTurnover() * 0.05;
   }
 

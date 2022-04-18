@@ -6,7 +6,7 @@ public class Operator extends Staff{
 
     public Operator(Company company) {
         super(Position.Operator, company);
-        setFix(40000.);
+        setFix(24_000.);
     }
 
     @Override
