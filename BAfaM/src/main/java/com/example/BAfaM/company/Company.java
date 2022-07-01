@@ -1,6 +1,6 @@
 package com.example.BAfaM.company;
 
-import com.example.BAfaM.company.Employee.Staff;
+import com.example.BAfaM.company.Employee.Core.Staff;
 import java.util.ArrayList;
 import java.util.Comparator;
 import lombok.Getter;

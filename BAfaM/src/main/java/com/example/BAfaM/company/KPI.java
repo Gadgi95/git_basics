@@ -36,7 +36,7 @@ public abstract class KPI {
   }
 
 
-  public double averageCheck() {  //Обработать возможные исключения
+  public double averageCheck() {
     if(UPT() != 0 && averageFinalPrice() != 0) {
       return averageFinalPrice() * UPT();
     }

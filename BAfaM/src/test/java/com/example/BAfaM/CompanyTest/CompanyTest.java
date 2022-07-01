@@ -1,6 +1,7 @@
 package com.example.BAfaM.CompanyTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.example.BAfaM.company.Company;
 import java.util.Collections;
@@ -16,14 +17,22 @@ public class CompanyTest {
   private Company company;
 
   @BeforeEach
-  public void setUp() { company = new Company("Test company ");}
+  public void setUp()
+  {
+    company = new Company("Test company ");
+  }
 
   @Test
   @DisplayName("Передано пустое значение в добавить сотрудника")
-  void addEmptyCompany() {
+  void testAddEmptyCompany() {
     company.hire(null);
     Set<String> expected = Set.of("Нельзя нанять сотрудника со значениями null");
-    assertEquals(Collections.emptySet(), company.hireAll(null));
+    assertThrows(Throwable.class, () -> company.hireAll(null));
   }
+
+  public void turnDown() {
+
+  }
+
 
 }

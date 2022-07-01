@@ -1,4 +1,4 @@
-package com.example.BAfaM.company.Employee;
+package com.example.BAfaM.company.Employee.Core;
 
 public enum Position {
     ShopAssistant,

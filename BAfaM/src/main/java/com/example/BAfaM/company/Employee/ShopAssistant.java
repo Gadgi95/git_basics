@@ -1,10 +1,12 @@
 package com.example.BAfaM.company.Employee;
 
 import com.example.BAfaM.company.Company;
+import com.example.BAfaM.company.Employee.Core.Position;
+import com.example.BAfaM.company.Employee.Core.Staff;
 import lombok.Getter;
 import lombok.Setter;
 
-public class ShopAssistant extends Staff{
+public class ShopAssistant extends Staff {
   @Setter @Getter
   double tradeTurnover = 0;
 

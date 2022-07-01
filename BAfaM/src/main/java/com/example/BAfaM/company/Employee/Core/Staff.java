@@ -1,4 +1,4 @@
-package com.example.BAfaM.company.Employee;
+package com.example.BAfaM.company.Employee.Core;
 
 import com.example.BAfaM.company.Company;
 import lombok.Getter;
