@@ -1,0 +1,27 @@
+<!--<html>-->
+<!--<body>-->
+<!--<div>-->
+<!--<form method="post" enctype="multipart/form-data">-->
+<!--  <input type="file" name="file">-->
+<!--</form>-->
+<!--</div>-->
+<!--<div>-->
+<!--  <#if message.filename??>-->
+<!--    <img src="/file/${message.filename}">-->
+<!--  </#if>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<html>
+  <body>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+  File to upload:
+      <input type="file" name="file">
+        <br /> Name: <input type="text" name="name"> <br /> <br />
+  <input type="submit" value="Upload"> Press here to upload the file!
+    </form>
+  </body>
+</html>
